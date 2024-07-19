@@ -1,3 +1,12 @@
+import "./global.css";
+import { Button } from "./components/ui/button";
+
 export function App() {
-  return <h1>Hello</h1>;
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <Button>
+        Cadastrar{" "}
+      </Button>
+    </div>
+  );
 }
