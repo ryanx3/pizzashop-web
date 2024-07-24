@@ -1,10 +1,10 @@
+import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 
 export function Dashboard() {
-  return(
+  return (
     <>
-    <Helmet title="Dashboard"/>
-    <h1>Dashboard</h1>
+      <Helmet title="Dashboard" />
     </>
-    )
+  );
 }

@@ -27,7 +27,6 @@ export function SignUp() {
   const navigate = useNavigate();
 
   async function handleSignUp(data: SignUpForm) {
-    console.log(data);
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
