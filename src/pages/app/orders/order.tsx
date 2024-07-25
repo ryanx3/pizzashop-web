@@ -36,7 +36,7 @@ export function Order() {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {Array.from({ length: 7 }).map((_, i) => {
+                {Array.from({ length: 6 }).map((_, i) => {
                   return <OrderTableRow key={i} />;
                 })}
               </TableBody>
