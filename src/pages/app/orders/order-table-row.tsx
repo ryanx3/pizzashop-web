@@ -96,7 +96,7 @@ export function OrderTableRow({ order }: OrderTableRowPros) {
       <TableCell>
         <Button
           onClick={() => cancelOrderFn({ orderId: order.orderId })}
-          disabled={!["pending, processing"].includes(order.status)}
+          disabled={!["pending", "processing"].includes(order.status)}
           variant="ghost"
           size="xs"
         >
