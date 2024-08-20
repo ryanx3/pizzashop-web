@@ -10,7 +10,7 @@ import {
 } from "./ui/dropdown-menu";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { getProfile } from "@/api/get-profile";
-import { getManagedRestaunt } from "@/api/get-managed-restaurant";
+import { getManagedRestaurant } from "@/api/get-managed-restaurant";
 import { Skeleton } from "./ui/skeleton";
 import { StoreProfileDialog } from "./store-profile-dialog";
 import { Dialog, DialogTrigger } from "./ui/dialog";
@@ -29,7 +29,7 @@ export function AccountMenu() {
   const { data: managedRestaurant, isLoading: isLoadingManagedRestaurant } =
     useQuery({
       queryKey: ["managed-restaurant"],
-      queryFn: getManagedRestaunt,
+      queryFn: getManagedRestaurant,
       staleTime: Infinity,
     });
 
