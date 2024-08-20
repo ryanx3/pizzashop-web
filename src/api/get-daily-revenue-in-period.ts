@@ -1,8 +1,8 @@
 import { api } from "@/lib/axios";
 
 export interface GetDailyRevenueInPeriodQuery {
-  from: Date | undefined;
-  to: Date | undefined;
+  from?: Date;
+  to?: Date;
 }
 
 export type GetDailyRevenueInPeriodResponse = {
