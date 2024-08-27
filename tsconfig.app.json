@@ -29,5 +29,9 @@
       "@/*": ["./src/*"]
     }
   },
+<<<<<<< HEAD
   "include": ["src", "test"]
+=======
+  "include": ["src"]
+>>>>>>> 51a528d6bdbe852e6725eeea78dcff174b148fb1
 }
