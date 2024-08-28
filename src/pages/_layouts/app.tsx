@@ -9,8 +9,8 @@ export function AppLayout() {
 
   useEffect(() => {
     const interceptorId = api.interceptors.response.use(
-      (respose) => respose,
-      (error) => {
+      (response: any) => response,
+      (error: Error) => {
         if (isAxiosError(error)) {
           const status = error.response?.status;
           const code = error.response?.data.code;
@@ -25,7 +25,7 @@ export function AppLayout() {
       api.interceptors.response.eject(interceptorId);
     };
   }, [navigate]);
-  
+
   return (
     <div className="flex min-h-screen flex-col antialiased">
       <Header />
