@@ -1,5 +1,3 @@
-import React from "react";
-
 import { render } from "@testing-library/react";
 import { OrderStatus } from "./order-status";
 
