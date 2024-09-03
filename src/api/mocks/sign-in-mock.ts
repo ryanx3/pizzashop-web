@@ -1,7 +1,7 @@
 import { http, HttpResponse } from "msw";
 import { SignInBody } from "../sign-in";
 
-export const SignInMock = http.post<never, SignInBody>(
+export const signInMock = http.post<never, SignInBody>(
   "/authenticate",
   async ({ request }) => {
     const { email } = await request.json();

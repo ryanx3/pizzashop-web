@@ -1,17 +1,17 @@
 import { api } from "@/lib/axios";
 
-export interface RegisterRestauntBody {
+export interface RegisterRestaurantBody {
   restaurantName: string;
   managerName: string;
   email: string;
   phone: string;
 }
 
-export async function registerRestaunt({
+export async function registerRestaurant({
   email,
   managerName,
   phone,
   restaurantName,
-}: RegisterRestauntBody) {
+}: RegisterRestaurantBody) {
   await api.post("/restaurants", { email, managerName, phone, restaurantName });
 }

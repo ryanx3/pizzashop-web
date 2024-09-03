@@ -1,4 +1,4 @@
-import { registerRestaunt } from "@/api/register-restaurant";
+import { registerRestaurant } from "@/api/register-restaurant";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@radix-ui/react-label";
@@ -27,7 +27,7 @@ export function SignUp() {
   } = useForm<SignUpForm>({});
 
   const { mutateAsync: registerRestaurantFn } = useMutation({
-    mutationFn: registerRestaunt,
+    mutationFn: registerRestaurant,
   });
 
   const navigate = useNavigate();
