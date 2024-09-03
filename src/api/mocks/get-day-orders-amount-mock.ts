@@ -2,7 +2,7 @@ import { http, HttpResponse } from "msw";
 
 import { GetDayOrdersAmountResponse } from "../get-day-orders-amount";
 
-export const GetDayOrdersAmountMock = http.get<
+export const getDayOrdersAmountMock = http.get<
   never,
   never,
   GetDayOrdersAmountResponse
