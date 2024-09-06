@@ -9,7 +9,6 @@ export function MonthRevenueCard() {
     queryFn: getMonthRevenue,
     queryKey: ["metrics", "month-canceled-orders-amount"],
   });
-
   return (
     <Card>
       <CardHeader className="flex-row items-center justify-between space-y-0 pb-2">
@@ -34,14 +33,14 @@ export function MonthRevenueCard() {
                   <span className="text-emerald-500 dark:text-emerald-400">
                     + {monthRevenue.diffFromLastMonth}%
                   </span>{" "}
-                  em relação ao mes passado
+                  em relação ao mês passado
                 </>
               ) : (
                 <>
                   <span className="text-rose-500 dark:text-rose-400">
                     {monthRevenue.diffFromLastMonth}%
                   </span>{" "}
-                  em relação ao mes passado
+                  em relação ao mês passado
                 </>
               )}
             </p>
