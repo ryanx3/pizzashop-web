@@ -4,18 +4,15 @@ Este projeto é um **Dashboard para restaurantes** desenvolvido em **React** com
 
 Os testes unitários foram realizados com **Vitest** e testes E2E com **Playwright**, garantindo a robustez da aplicação, com tipagem completa em **TypeScript**. A estilização é feita com **TailwindCSS**, utilizando componentes do **ShadcnUI**. A API é construída em **BunJS**, e o login dos usuários é simplificado através de um sistema de **magic link**.
 
-Além disso, a interface conta com um calendário que permite visualizar as datas dos pedidos, proporcionando uma gestão ainda mais eficiente e organizada.
+Além disso, a interface conta com um calendário que permite visualizar as datas dos pedidos e o gráfico se ajusta conforme a data informada, proporcionando uma gestão ainda mais eficiente e organizada.
 
 ## Demonstração
 
-![Screenshot 1](caminho/para/sua/imagem1.png)  
-*Descrição da imagem 1*
+![Screenshot 1](./src/assets/readme1.png)  
+Página Home
 
-![Screenshot 2](caminho/para/sua/imagem2.png)  
-*Descrição da imagem 2*
-
-![Screenshot 3](caminho/para/sua/imagem3.png)  
-*Descrição da imagem 3*
+![Screenshot 2](./src/assets/readme2.png) 
+Página de pedidos
 
 ## Tecnologias Utilizadas
 
